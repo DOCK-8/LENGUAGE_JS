@@ -12,4 +12,7 @@ nuestros proyectos.
 
 |Variable|Description|Length|
 |--------|-----------|------|
-|Integer(Enteros)|Almacena numeros enteros|[255 255]|
+|Integer (Enteros)|Almacena numeros enteros|4 bytes|
+|Char (Caracter)|Almacena caracteres|1 byte|
+|Float (Decimales)|Almacena numeros decimales como enteros|8 bytes|
+|String (Cadenas)|Almacena cadena de caracteres|n bytes|
