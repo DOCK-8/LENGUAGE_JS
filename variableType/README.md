@@ -9,3 +9,7 @@ En javascript, tenemos tipos de variables nativas, osea cosas que javascript tie
 nuestros proyectos.
   
 <img src = "img/variableType.png">
+
+|Variable|Description|Length|
+|--------|-----------|------|
+|Integer(Enteros)|Almacena numeros enteros|[255 255]|
