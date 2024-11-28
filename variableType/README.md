@@ -38,5 +38,7 @@ int x = 5;
 //No puedes usar una caje de numeros para letra : ACASO ERES IMB*CIL
 x = "Que decis gato";
 ```
-|---------|-----------|
-|```print(hola mundo)```|<img src = "img/VT.png">|
+| Código                          | Imagen                          |
+|---------------------------------|---------------------------------|
+| ```python                       |
+| print("hola mundo")```          | <img src="img/variableType.png" width="100"> |
