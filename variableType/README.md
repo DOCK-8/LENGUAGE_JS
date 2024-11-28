@@ -7,3 +7,5 @@ Relacionalo a un caja que puede guardar cualquier tipo de cosas, y con cualquier
 # TIPOS DE VARIABLE
 En javascript, tenemos tipos de variables nativas, osea cosas que javascript tiene por defecto para el desarrollo de 
 nuestros proyectos.
+  
+<img src = "img/variableType.png">
