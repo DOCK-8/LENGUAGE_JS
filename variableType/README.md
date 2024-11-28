@@ -40,4 +40,4 @@ x = "Que decis gato";
 ```
 | Código                           | Ejecución (Imagen)           |
 |----------------------------------|-----------------------------|
-| ```python<br>print("hola mundo")``` | ![Imagen](img/variableType.png)        |
+| ```print("hola mundo")``` | ![Imagen](img/variableType.png)        |
