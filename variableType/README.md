@@ -37,3 +37,6 @@ int x = 5;
 //ERROR
 //No puedes usar una caja de numeros para cadenas de caracteres : ACASO ERES IMB*CIL
 x = "Que decis gato";
+```
+# IMAGEN DE EJECUCION
+<img src = "img/variableType.png">
