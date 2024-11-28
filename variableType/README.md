@@ -35,9 +35,5 @@ para solamente albergar un tipo de dato
 //Escogo mi cajita que solo guarda enteros
 int x = 5;
 //ERROR
-//No puedes usar una caje de numeros para letra : ACASO ERES IMB*CIL
+//No puedes usar una caja de numeros para cadenas de caracteres : ACASO ERES IMB*CIL
 x = "Que decis gato";
-```
-| Código                           | Ejecución (Imagen)           |
-|----------------------------------|-----------------------------|
-| ```print("hola mundo")``` | ![Imagen](img/variableType.png)        |
