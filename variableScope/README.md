@@ -1,14 +1,29 @@
 # VARIABLE SCOPE
-Si bien las variables de *JS* son muy versatiles tambien es bueno conocer 
-las nuevas integracion como lo fueron de **JS 6** que integro el tipo de 
-variables ***let*** y ***var***.
-|VAR|LET|
-|Esta es una variable que podriamos relacionar como si fuera un jugador de futbol habilitado, en una zona especifica que nosotros como arbitros de linea, podemos definirlos como fuera de lugar.|Por otro lado, tenemos al arbitro que tiene la libertad en toda la cancha de futbol (codigo JS).|
+
+En JavaScript, las variables son muy versátiles. Con la llegada de **ES6 (ECMAScript 2015)**, se introdujeron dos nuevas formas de declarar variables: ***let*** y ***const***. Estas complementan al ya existente ***var***. Es importante conocer sus diferencias para aprovechar mejor su alcance (*scope*).
+
+| **Tipo** | **Descripción** |
+|----------|-----------------|
+| **var**  | Es como el árbitro que tiene libertad para moverse por toda la cancha (ámbito global o de función). Sin embargo, puede causar problemas porque no respeta los límites de bloque. |
+| **let**  | Es como un jugador de fútbol que está restringido a una zona específica (ámbito de bloque), como si el árbitro de línea controlara su posición. |
+
+---
+
 # EXAMPLE
-<img src = "varLetImage.png">
+
+A continuación, un ejemplo visual para entender mejor las diferencias entre `var` y `let`:
+
+<img src="varLetImage.png" alt="Ejemplo visual del comportamiento de var y let en JavaScript">
+
+---
+
 # SUGERENCIA
-Entonces ahora que conoces tu poder, recuerda que:  
-*UN GLAN PODEL TIENE UNA GLAN LESPONSABILIDAD PAPU* (Dock, 2024)
-  
-Entonces controla al kiki
-<img src="letImage.png">
+
+Ahora que conoces la diferencia entre `var` y `let`, recuerda:
+
+> **Un gran poder conlleva una gran responsabilidad**  
+> *(Ben Parker, adaptado por Dock, 2024)*
+
+Así que usa `let` siempre que sea posible para evitar errores en tu código.
+
+<img src="letImage.png" alt="Imagen motivacional para usar let en lugar de var">
