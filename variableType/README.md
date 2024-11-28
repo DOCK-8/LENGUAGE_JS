@@ -10,9 +10,9 @@ nuestros proyectos.
   
 <img src = "img/variableType.png">
 
-|Variable|Description|Length|
-|--------|-----------|------|
-|Integer (Enteros)|Almacena numeros enteros|4 bytes|
-|Char (Caracter)|Almacena caracteres|1 byte|
-|Float (Decimales)|Almacena numeros decimales como enteros|8 bytes|
-|String (Cadenas)|Almacena cadena de caracteres|n bytes|
+|Variable|Description|Lenght|Example|
+|--------|-----------|------|-------|
+|Integer (Enteros)|Almacena numeros enteros|4 bytes|4|
+|Char (Caracter)|Almacena caracteres|1 bytes|'A'|
+|Float (Decimales)|Almacena numeros decimales como enteros|8 bytes|3.54|
+|String (Cadenas)|Almacena cadena de caracteres|n bytes|"CHARACTER"|
