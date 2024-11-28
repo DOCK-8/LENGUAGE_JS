@@ -8,14 +8,13 @@ Relacionalo a un caja que puede guardar cualquier tipo de cosas, y con cualquier
 En javascript, tenemos tipos de variables nativas, osea cosas que javascript tiene por defecto para el desarrollo de 
 nuestros proyectos.
   
-<img src = "img/variableType.png">
-
 |Variable|Description|Lenght|Example|
 |--------|-----------|------|-------|
 |Integer (Enteros)|Almacena numeros enteros|4 bytes|4|
 |Char (Caracter)|Almacena caracteres|1 bytes|'A'|
 |Float (Decimales)|Almacena numeros decimales como enteros|8 bytes|3.54|
 |String (Cadenas)|Almacena cadena de caracteres|n bytes|"CHARACTER"|
+|Bool|Almacena valores de verdad|1 bit|true or false|
 
 # ACLARACION
 Si dijimos que una variable es un espacio para almacenar cosas, y luego les digo que hay tipo de cosas 
@@ -36,9 +35,8 @@ para solamente albergar un tipo de dato
 //Escogo mi cajita que solo guarda enteros
 int x = 5;
 //ERROR
-/*
-* No puedes usar una caje de numeros para letras
-* Acaso eres raro
-*/
+//No puedes usar una caje de numeros para letra : ACASO ERES IMB*CIL
 x = "Que decis gato";
 ```
+|---------|-----------|
+|```print(hola mundo)```|<img src = "img/VT.png">|
