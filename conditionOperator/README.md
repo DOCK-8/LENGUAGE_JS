@@ -10,8 +10,8 @@ tomar como si fuera un laberinto que sigue una persona para llegar a un punto.
 |ELSE| Este es un camino por default, que tomamos si los `n` planes no logran cumplirse.|
 
 # EXAMPLE
-En este caso vamos a ilustrar este laberinto con `n` caminos pero que cada uno tiene una 
-condicion para seguirlo.
+Bueno, volviendo a mis raices, podemos ilustrarlo como el anime **LAS QUINTILLIZAS**, donde la desicion de *Futaro* (`¿Por que no Miku?`), determina 
+un resultado en mi estado mental.
 <img src="img/conditionImage.png">
 
 # ACLARACION
