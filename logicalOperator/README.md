@@ -7,7 +7,7 @@ Este operador, siempre se ensañarlo como, si fuera cuando te dicen que, trabaje
 
 <img src = "img/andImage.png">
 
-> Te lo resumo : Si uno de ellos trabaja de la peor manera el resultado del partido es negativo
+> EN RESUMEN : Si uno de ellos trabaja de la peor manera el resultado del partido es negativo
 
 |RIN|AND|SHIDOU|RESULT|
 |--|--|--|--|
@@ -21,7 +21,7 @@ En el caso de este operador, sera cuando haces equipo con *BAROU* y *NAGI*
 
 <img src = "img/orImage.png">
 
-> Te lo resumo : Si por lo menos uno de ellos trabaja de la mejor manera el resultado del partido siempre sera positivo
+> EN RESUMEN : Si por lo menos uno de ellos trabaja de la mejor manera el resultado del partido siempre sera positivo
 
 |BAROU|OR|NAGI|RESULT|
 |--|--|--|--|
