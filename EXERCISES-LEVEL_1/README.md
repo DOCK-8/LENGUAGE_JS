@@ -28,6 +28,14 @@ Este nivel sera facil de realizar si pasaste todos los caminos y analogias de lo
 ```js
 let variableUsuario = prompt("Ingresa tu dato");
 ```
+> Backticks [*`*], un tipo de cadena de caracteres que nos permite incrustrar variables, sin la necesidad de concatenar cadenas.
+```js  
+let x = "Lucas"
+//anterior
+document.write("Hola "+x+" como esta todo bien, gato");
+//backticks
+document.write(`Hola ${x} como esta todo bien, gato`);
+```
 
 ## DESCRIPTION
 Tu universidad, al momento, de registrar un nuevo ingresante es necesario conocer si este muchacho, es 
