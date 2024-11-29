@@ -10,7 +10,7 @@ En JavaScript, las variables son muy versátiles. Con la llegada de **ES6 (ECMAS
 # EXAMPLE
 A continuación, un ejemplo visual para entender mejor las diferencias entre `var` y `let`:
 
-<img src="varLetImage.png" alt="Ejemplo visual del comportamiento de var y let en JavaScript">
+<img src="img/varLetImage.png" alt="Ejemplo visual del comportamiento de var y let en JavaScript">
 
 # SUGERENCIA
 Ahora que conoces la diferencia entre `var` y `let`, recuerda:
@@ -21,7 +21,7 @@ Ahora que conoces la diferencia entre `var` y `let`, recuerda:
 Así que usa `let` siempre que sea posible para evitar errores en tu código.
 Para que, tu variable no se vuelve un **agente 007**.
 
-<img src="letImage.png" alt="Imagen motivacional para usar let en lugar de var">
+<img src="img/letImage.png" alt="Imagen motivacional para usar let en lugar de var">
 
 # IMAGEN DE EJECUCION
-<img src = "SV.png">
+<img src = "img/SV.png">
