@@ -1,4 +1,4 @@
-let x = 6, y = 5;
+let x = 6, y = 6;
 if (x == 6)
   document.write("EL numero es 6");
 else if(y >= 1)
