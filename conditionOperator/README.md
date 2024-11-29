@@ -3,8 +3,8 @@ Bueno ahora hablemos de las condicionales, estas son como rutas que tomamos
 si algo o alguien nos da una razon para hacerlo, por lo que, esto lo podemos 
 tomar como si fuera un laberinto que sigue una persona para llegar a un punto.
 
-|---|---|
 |CONDICION|DESCRIPCION|
+|---|---|
 |IF| Esta es una sentencia para decidir: si se cumple algo, hacemos esto|
 |ELSE IF| Esta representa como una sentencia que si no se cumple lo del if entonces pasamos al plan B que tambien depende de algo|
 |ELSE| Este es un camino por default, que tomamos si los `n` planes no logran cumplirse.|
