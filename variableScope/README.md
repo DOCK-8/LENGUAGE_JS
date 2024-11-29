@@ -22,3 +22,6 @@ Así que usa `let` siempre que sea posible para evitar errores en tu código.
 Para que, tu variable no se vuelve un **agente 007**.
 
 <img src="letImage.png" alt="Imagen motivacional para usar let en lugar de var">
+
+# IMAGEN DE EJECUCION
+<img src = "SV.png">
