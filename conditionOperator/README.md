@@ -11,7 +11,7 @@ tomar como si fuera un laberinto que sigue una persona para llegar a un punto.
 
 # EXAMPLE
 Bueno, volviendo a mis raices, podemos ilustrarlo como el anime **LAS QUINTILLIZAS**, donde la desicion de *Futaro* (`¿Por que no Miku?`), determina 
-un resultado en mi estado mental.
+un resultado en mi estado mental.  
 <img src="img/conditionImage.png">
 
 # ACLARACION
