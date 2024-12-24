@@ -30,3 +30,16 @@ document.write("<hr>");
 for (let x of array){
   document.write(x + "<br>");
 }
+document.write("<hr><p>CONTINUE-BREAK</p>");
+let x = [1, [10, 20, 30], 3, 4, 5, 6];
+for(let num in x){
+  if( num == 1){
+    for(let y of x[num]){
+      document.write(`${y}<br>`);
+      if(y % 4 == 0)
+        break;
+    }
+    continue;
+  }
+  document.write(`${x[num]}<br>`);
+}
