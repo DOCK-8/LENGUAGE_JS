@@ -11,6 +11,8 @@ document.write(`<br>Elemento 3 : ${x[2]}`);
 //Un array asociativo es una estructura similar a un map
 let y = {
   name : "Lucas",
-  canal : "Soy Dalto",
+  canal : {
+    number : true,
+  },
 };
-document.write(`<hr>Nombre : ${y["name"]}<br>Canal de YT : ${y["canal"]}`);
+document.write(`<hr>Nombre : ${y["name"]}<br>Canal de YT : ${y["canal"]["number"]}`);
