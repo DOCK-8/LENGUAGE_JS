@@ -108,7 +108,7 @@ for(let num in x){
 
 ## IMAGEN DE EJECUCIÓN
 
-<img src="img/A.png">
+<img src="img/B.png">
 
 > Esta imagen ilustra la salida generada por el código. Ayuda a entender cómo se comportan los bucles y el uso de `continue` y `break` en la práctica.
 
