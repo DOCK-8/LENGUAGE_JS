@@ -14,6 +14,7 @@ Las funciones tradicionales se declaran utilizando la palabra clave `function` s
 function sumas(num1, num2) {
   return num1 + num2;
 }
+```
 
 > Este código imprime los resultados de la suma y la resta utilizando las funciones tradicionales.
 
