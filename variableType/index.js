@@ -13,3 +13,7 @@ document.write(`<br>la variable x es : ${x}`);
 //variable boolean
 x = true;
 document.write(`<br>la variable x es : ${x}`);
+if (true == true)
+  let y = 5;
+  alert(x);
+alert(y);

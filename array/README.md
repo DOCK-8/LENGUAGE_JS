@@ -18,6 +18,24 @@ En este caso, lo representamos como si fuera un conjunto de **cartas POKEMON**, 
 
 > Este array es un conjunto de 3 cartas *POKEMON* : `lenght = 3`
 
+# ARRAY ASOCIATIVO
+Un *array asociativo* es un conjuntos de datos relacionados a una llave, que nos permite trabajar como una BD-No-Relaional 
+organizada de manera *estructural*.  
+El mismo que para acceder a cada elemento, es mediante esta *key*.
+# EXAMPLE
+Para entenderlo usemos el archivo mas comun para la comunicacion entre servicios **JSON**.
+
+```json
+{
+  "dato" : "entero",
+  "contenido" : "2+2",
+  "autor" : "Lucas",
+}
+  
+```
+> Formato : `{KEY : VALOR}`, es decir, usar la `KEY` para abrir la puerta para ver el `VALOR` que relaciona.
+
 # IMAGEN DE EJECUCION
 
 <img src = "img/A.png">
+
