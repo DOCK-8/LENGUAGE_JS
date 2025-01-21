@@ -1,0 +1,39 @@
+body{
+  background: #888;
+}
+header{
+  display: flex;
+}
+.video{
+  margin: 10px;
+  width: min-content;
+  background: linear-gradient(#ca1 0%,transparent 95%);
+  border-radius: 2%;
+}
+.img{
+  padding: 20px;
+}
+.imgPicture{
+  width: 20vw;
+  height: 45vh;
+  border-radius: 3%;
+  box-shadow: 2px 4px 10px 5px #001;
+}
+.text{
+  letter-spacing: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.description{
+  color : #fff;
+  text-align: center;
+}
+.buy{
+  border: none;
+  background: #d91;
+  margin: 20px;
+  padding: 1vw;
+  font-family: monospace;
+  font-weight: 800;
+  letter-spacing: 0.5em;
+}

@@ -1,0 +1,56 @@
+body{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#keys-conteiner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.key-conteiner{
+  margin: 20px;
+  max-width: 30vw;
+  max-height: 50vh;
+  font-family: sans-serif;
+  border: 2px solid #000;
+  border-radius: 2%;
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+.key-conteiner:hover{
+  margin: auto 30px;
+  border: 2px solid #000;
+  box-shadow: 6px 6px 20px #000;
+  background-color: #ffe;
+}
+.key-conteiner:focus{
+  background: #ffe;
+}
+.key-conteiner img{
+  width: 290px;
+}
+.modelo{
+  color: #881;
+}
+.descripcion{
+  color: #555;
+}
+.precio{
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #271;
+}
+#key-button{
+  border-radius: 5%;
+  border: none;
+  font-family: sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  background: #253;
+  padding: 20px;
+}
+#key-button:hover{
+  background: #394;
+}
