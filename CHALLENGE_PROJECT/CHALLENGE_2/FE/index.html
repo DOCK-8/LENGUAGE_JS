@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NAME AUTOR - MOVIES AND SERIES</title>
+  <link rel = "stylesheet" href = "style.css">
+  <!-- <meta http-equiv = "refresh" content = "1"> -->
+</head>
+<body>
+  <template id = "movie-select-template">
+    <div id = "movie-select-container">
+      <svg class = "icons-container close-icon">
+        <use class = "icon-close" xlink:href = "iconos.svg#close_a">
+      </svg>
+      <span id = "movie-select-title">Moon Night</span>
+      <img id = "movie-select-image" src = "movies.png" alt = "movieSelect">
+      <p id = "movie-select-description">
+        Lorem Ipsum is simply dummy text of the printing 
+        and typesetting industry. Lorem Ipsum has been the 
+        industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <div id = "movie-select-properties">
+        Lorem Ipsum is simply dummy text of the printing 
+        and typesetting industry. Lorem Ipsum has been the 
+        industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </div>
+      <span id = "movie-select-rating">
+        <svg class = "icons-container">
+          <use class = "icon-star" xlink:href = "iconos.svg#star">
+        </svg>
+        <span id = "number-rating">9.3</span>
+      </span>
+      <span id = "movie-select-buy">
+        <svg class = "icons-container">
+          <use class = "icon-lock" xlink:href = "iconos.svg#lock">
+        </svg>
+        <input type = "submit" value = "BUY">
+      </span>
+    </div>
+  </template>
+  <header></header>
+  <main>
+    <div id = "background-image"></div>
+    <div id = "movies-container">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+      <img class = "movies-card" src = "movie.png">
+    </div>
+    <dialog id = "movie-select-dialog">
+    </dialog>
+  </main>
+  <footer></footer>
+  <script defer src = "index.js" type = "module"></script>
+</body>
+</html>

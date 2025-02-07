@@ -1,0 +1,172 @@
+/* PAGE BODY STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+  background: #000;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MOVES GRID, ALBUM ALL MOVIES IN DATABASES */
+#background-image{
+  position: absolute;
+  width: min-content;
+  /* LIBERA SOLO ES PARA QUE NO MOLESTE */
+  z-index: 1;
+  animation: transparentImage 2s forwards 1s;
+  &::before{
+    color: #db0000;
+    font-family: Bebas Neue;
+    font-size: 20rem;
+    text-decoration: overline;
+    content: "NETFLIX" ;
+  }
+}
+/* INITIAL ANIMATION -> NAME PAGE */
+@keyframes transparentImage{
+  50%{
+    opacity: 0;
+  }
+  100%{
+    z-index: 0;
+    opacity: 1;
+  }
+}
+/* POSTER MOVIE -> PREVIUS IMAGE [CONTAINER] */
+#movies-container{
+  position: relative;
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  max-width: 900px;
+}
+.movies-card{
+  width: 100%;
+  height: 100%;
+  border-radius: 1%;
+  transition: scale .8s;
+  &:hover{
+    scale: .8;
+  }
+}
+
+/* MOVIE SELECT BY USER => [CONTAINER] */
+#movie-select-dialog{
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 80vw;
+  max-height: 90vh;
+}
+#movie-select-container{
+  max-width: 100%;
+  max-height: 100%;
+  border: 0.2vw solid #db0000;
+  display: grid;
+  gap: 1vmin;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(8, minmax(8.6vw, 1fr));
+  grid-template-rows: repeat(2, minmax(100px, 39vh)) minmax(5vh, 1fr);
+  background: #000;
+  color: #fff;
+}
+dialog::backdrop {
+    background: #000e;
+}
+/* BUTTON BUY */
+#movie-select-buy{
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  grid-column: 5/8;
+  grid-row: 3/4;
+}
+/* BUTTONS */
+input[type = "submit"]{
+  width: 60%;
+  border: none;
+  background: #f03;
+  font-family: sans-serif;
+  font-size: 2.5vmax;
+  font-weight: 500;
+  letter-spacing: .3rem;
+}
+/* TITLE */
+#movie-select-title{
+  font-size: 4.5rem;
+  font-family: Bebas Neue;
+  letter-spacing: .5rem;
+  color: #fff;
+  width: min-content;
+  grid-column: 1/3;
+  grid-row:1/2;
+}
+/* DESCRIPCION */
+#movie-select-description{
+  display: flex;
+  align-items: center;
+  background: #000000c1;
+  box-sizing: border-box;
+  height: 100%;
+  color: #fff;
+  padding: .8rem;
+  grid-column: 6/9;
+  grid-row: 1/3;
+}
+/* RATING */
+#movie-select-rating{
+  display: flex;
+  gap: 5%;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+#number-rating{
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: .1rem;
+}
+/* PROPERTIES */
+#movie-select-properties{
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+/* IMAGE */
+#movie-select-image {
+  width: 100%;
+  height: 100%;
+  grid-column: 3/9;
+  grid-row: 1/3;
+  object-fit: cover;
+}
+.icons-container{
+  width: 3vmax;
+  height: 3vmax;
+}
+.icon-star{
+  color: #fff500;
+}
+.icon-lock{
+  color: #ddd;  
+}
+.icon-close{
+  color: #fff;
+}
+/* DIV CLOSE ICON */
+.close-icon{
+  position: absolute;
+  top: 1vmax;
+  right: 1vmax;
+}
+.close-icon:hover{
+  & > use{
+    color: red;
+  }
+}
