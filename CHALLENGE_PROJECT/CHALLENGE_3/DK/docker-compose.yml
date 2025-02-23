@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  #SERVER-CONTAINER
+  server:
+    build: .
+    ports:
+      - 8080:80
+    volumes:
+      - ../FE/.:/usr/local/apache2/htdocs/.
+  #BACKEND-CONTAINER
+  backend:
+    build: ../BE/.
+    ports:
+      - 3000:3000
+    volumes:
+      - ../BE/:/app/

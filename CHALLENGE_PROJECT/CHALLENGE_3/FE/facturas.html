@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "styleFacturas.css">
+    <script defer src = "facturas.js" type = "module"></script>
+  </head>
+  <body>
+    <div id = "create-facturas">
+      <form id = "form-create-facturas">
+          <div id = "container-facturas-a">
+            <label>NUMERO DE RANGO</label>
+            <select name = "numbering_range_id" id = "numberRange">
+            </select>
+            <label>REFERENCIA DEL RANGO</label>
+            <input type= "text" name = "code" id = "referenceCode" readOnly>
+            <label>OBSERVACION</label>
+            <input id = "observation" name = "observation" type = "text">
+            <label>FORMA DE PAGO</label>
+            <select id = "paymentForm" name = "payment_form">
+            </select>
+            <!-- SI ES PAGO A CREDITO -->
+            <label id = "paymentDateLabel">FECHA DE PAGO</label>
+            <input id = "paymentDate" name = "payment_due_date" type = "date">
+            <label>METODO DE PAGO DE PAGO CODE</label>
+            <select id = "paymentMethodCod" name = "payment_method_code">
+            </select>
+            <label>INICIO DE PERIODO DE FACTURACION</label>
+            <input id = "billingPeriodStart" type = "date" name = "billing_start_date">
+            <label>INICIO DE PERIODO DE FACTURACION - HOUR</label>
+            <input id = "billingPeriodStartHour" type = "time" name = "billing_start_time">
+            <label>FINAL DEL PERIODO DE FACTURACION</label>
+            <input id = "billingPeriodEnd" type = "date" name = "billing_end_date">
+            <label>FINAL DEL PERIODO DE FACTURACION - HOUR</label>
+            <input id = "billingPeriodEndHour" type = "time" name = "billing_end_time">
+          </div>
+          <div id = "container-facturas-b">
+            <!-- CUSTOMER DATA -->
+            <label>IDENTIFICACION DE USUARIO</label>
+            <select id = "customerIdentificationId" name = "customer_identification_document">
+            </select>
+            <label>NUMERO DE IDENTIFICACION</label>
+            <input id = "customerIdentificationNumber" type = "number" name = "customer_identification">
+            <label>COMPAÑIA</label>
+            <input id = "customerCompany" type = "text" name = "customer_company">
+            <label>NOMBRE COMERCIAL</label>
+            <input id = "customerTradeName" type = "text" name = "customer_trade_name">
+            <label>NOMBRE USUARIO</label>
+            <input id = "customerName" type = "text" name = "customer_name">
+            <label>DIRECCION USUARIO</label>
+            <input id = "customerAddress" type = "text" name = "customer_address">
+            <label>CORREO USUARIO</label>
+            <input id = "customerEmail" type = "email" name = "customer_email">
+            <label>TELEFONO USUARIO</label>
+            <input id = "customerPhone" type = "tel" name = "customer_phone">
+            <label>TIPO DE ORGANIZACION LEGAL</label>
+            <select id = "customerLegalOrganization" name = "customer_legal_organization">
+            </select>
+            <label>TRIBUTO</label>
+            <select id = "customerTribute" name = "customer_tribute">
+            </select>
+            <label>MUNICIPALIDAD</label>
+            <select id = "customerMunicipality" name = "customer_municipality">
+            </select>
+          </div>
+          <div id = "container-facturas-c">
+          <!-- CREATE ITEM -->
+            <label>ID</label>
+            <input id = "itemCodeReference" type = "number" name = "item_code_reference">
+            <label>NAME</label>
+            <input id = "itemName" type = "text" name = "item_name">
+            <label>CANTIDAD</label>
+            <input id = "itemQuantity" type = "number" name = "item_quantity">
+            <label>DESCUENTO - %</label>
+            <div class = "containerRange">
+              <input id = "itemDiscountRate" type = "range" name = "item_discount_rate" step = "0.01">
+              <span id = "itemDiscountData"></span>
+            </div>
+            <label>PRECIO</label>
+            <input id = "itemPrice" type = "number" name = "item_price" step = "any"><!--precio con Impuesteo-->
+            <label>IMPUESTO - %</label>
+            <div class = "containerRange">
+              <input id = "itemTaxRate" type = "range" name = "item_tax_rate" step = "0.01">
+              <span id = "itemTaxData"></span>
+            </div>
+            <label>MEDIDA</label>
+            <select id = "itemUnitMeasure" name = "item_unit_measure">
+            </select>
+            <label>STANDARD</label>
+            <select id = "itemStandardCode" name = "item_standart_code">
+            </select>
+            <label>EXCLUSION ITEM</label>
+            <input id = "itemIsExcluded" type = "checkbox" name = "item_exclude">
+            <label>TRIBUTO</label>
+            <select id = "itemTribute" name = "item_tribute">
+            </select>
+            <table id = "itemsTable">
+              <tr>
+                <th>CODE</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>DISCOUNT</th>
+                <th>UNIT MEASURE</th>
+                <th>OPTIONS</th>
+              </tr>
+            </table>
+            <button id = "itemCreate" type = "button">AGREGAR</button>
+          </div>
+        <input type = "submit" class = "editButton" value = "CREAR" form = "form-create-facturas">
+        <input type = "button" id = "VerFacturaView" class = "editButton" value = "VER FACTURAS">
+      </form>
+    </div>  
+    <div id = "view-facturas">
+      <table id = "table-facturas">
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>NUMBER</th>
+          <th>CLIENTE</th>
+          <th>STATUS</th>
+        </tr>
+      </table>
+      <button id = "crearFacturaView" class = "editButton" style = "margin-top: 1em">CREAR FACTURA</button>
+    </div>
+  </body>
+</html>

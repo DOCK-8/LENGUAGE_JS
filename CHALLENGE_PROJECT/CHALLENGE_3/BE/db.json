@@ -1,0 +1,316 @@
+{
+  "facturas": [
+    {
+      "id": 10773,
+      "document": {
+        "code": "01",
+        "name": "Factura electrónica de Venta"
+      },
+      "number": "SETP990010050",
+      "api_client_name": "José Landázuri",
+      "reference_code": "595a009a-6b83-4634-b984-ccdad6d3ac74",
+      "identification": "222222222222",
+      "graphic_representation_name": "Consumidor final",
+      "company": "",
+      "trade_name": null,
+      "names": "Consumidor final",
+      "email": "",
+      "total": "1000.00",
+      "status": 1,
+      "errors": [],
+      "send_email": 0,
+      "has_claim": 0,
+      "is_negotiable_instrument": 0,
+      "payment_form": {
+        "code": "1",
+        "name": "Pago de contado"
+      },
+      "created_at": "11-02-2025 07:20:18 AM",
+      "credit_notes": [],
+      "debit_notes": []
+    },
+    {
+      "id": 10772,
+      "document": {
+        "code": "01",
+        "name": "Factura electrónica de Venta"
+      },
+      "number": "SETP990010049",
+      "api_client_name": "santirossip@gmail.com",
+      "reference_code": "I3-1739249644654",
+      "identification": "Santino Rossi",
+      "graphic_representation_name": "Santino Rossi",
+      "company": "",
+      "trade_name": "",
+      "names": "Santino Rossi",
+      "email": "santidev123@gmail.com",
+      "total": "27000.00",
+      "status": 1,
+      "errors": [
+        "Regla: FAX14, Notificación: Reporta una tarifa diferente para uno de los tributos enunciados en la tabla 13.3.9"
+      ],
+      "send_email": 0,
+      "has_claim": 0,
+      "is_negotiable_instrument": 0,
+      "payment_form": {
+        "code": "1",
+        "name": "Pago de contado"
+      },
+      "created_at": "10-02-2025 11:54:06 PM",
+      "credit_notes": [],
+      "debit_notes": []
+    }
+  ],
+  "rangosNumeracion": [
+    {
+      "id": 8,
+      "name": "Factura de Venta"
+    },
+    {
+      "id": 9,
+      "name": "Nota Crédito"
+    },
+    {
+      "id": 10,
+      "name": "Nota Débito"
+    }
+  ],
+  "tributosProducto": [
+    {
+      "id": 1,
+      "name": "IVA"
+    },
+    {
+      "id": 2,
+      "name": "IC"
+    },
+    {
+      "id": 3,
+      "name": "ICA"
+    },
+    {
+      "id": 4,
+      "name": "INC"
+    },
+    {
+      "id": 5,
+      "name": "ReteIVA"
+    },
+    {
+      "id": 6,
+      "name": "ReteRenta"
+    },
+    {
+      "id": 7,
+      "name": "ReteICA"
+    },
+    {
+      "id": 8,
+      "name": "IC Porcentual"
+    },
+    {
+      "id": 9,
+      "name": "FtoHorticultura"
+    },
+    {
+      "id": 10,
+      "name": "Timbre"
+    },
+    {
+      "id": 11,
+      "name": "INC Bolsas"
+    },
+    {
+      "id": 12,
+      "name": "INCarbono"
+    },
+    {
+      "id": 13,
+      "name": "INCarbono"
+    },
+    {
+      "id": 14,
+      "name": "INCombustibles"
+    },
+    {
+      "id": 15,
+      "name": "Sobretasa Combustibles"
+    },
+    {
+      "id": 16,
+      "name": "Sordicom"
+    },
+    {
+      "id": 17,
+      "name": "IC Datos"
+    }
+  ],
+  "municipios": [
+    {
+      "id": 1,
+      "name": "El Encanto"
+    },
+    {
+      "id": 2,
+      "name": "La Chorrera"
+    },
+    {
+      "id": 3,
+      "name": "La Pedrera"
+    },
+    {
+      "id": 4,
+      "name": "La Victoria"
+    },
+    {
+      "id": 5,
+      "name": "Leticia"
+    },
+    {
+      "id": 6,
+      "name": "Miriti - Parana"
+    },
+    {
+      "id": 7,
+      "name": "Puerto Alegria"
+    },
+    {
+      "id": 8,
+      "name": "Puerto Arica"
+    },
+    {
+      "id": 9,
+      "name": "Puerto Nariño"
+    },
+    {
+      "id": 10,
+      "name": "Puerto Santander"
+    }
+  ],
+  "unidadesMedida": [
+    {
+      "id": 70,
+      "name": "unidad"
+    },
+    {
+      "id": 414,
+      "name": "kilogramo"
+    },
+    {
+      "id": 449,
+      "name": "libra"
+    },
+    {
+      "id": 512,
+      "name": "metro"
+    },
+    {
+      "id": 874,
+      "name": "galón"
+    }
+  ],
+  "codigosFormaPago": [
+    {
+      "id": 10,
+      "name": "Efectivo"
+    },
+    {
+      "id": 42,
+      "name": "Consignación"
+    },
+    {
+      "id": 20,
+      "name": "Cheque"
+    },
+    {
+      "id": 46,
+      "name": "Transferencia Débito Interbancario"
+    },
+    {
+      "id": 47,
+      "name": "Transferencia"
+    },
+    {
+      "id": 71,
+      "name": "Bonos"
+    },
+    {
+      "id": 72,
+      "name": "Vales"
+    }
+  ],
+  "formasPago": [
+    {
+      "id": 1,
+      "name": "Pago de contado"
+    },
+    {
+      "id": 2,
+      "name": "Pago a credito"
+    }  
+  ],
+  "documentoIdentidad": [
+    {
+      "id": 1,
+      "name": "Registro civil"
+    },
+    {
+      "id": 2,
+      "name": "Tarjeta de Identidad"
+    },
+    {
+      "id": 3,
+      "name": "Cedula ciudadana"
+    },
+    {
+      "id": 4,
+      "name": "Tarjeta de extranjeria"
+    },
+    {
+      "id": 5,
+      "name": "Cedula de extranjeria"
+    },
+    {
+      "id": 6,
+      "name": "NIT"
+    }
+  ],
+  "tiposOrganizaciones": [
+    {
+      "id": 1,
+      "name": "Persona juridica"
+    },
+    {
+      "id": 2,
+      "name": "Persona natural"
+    }
+  ],
+  "tributosClientes": [
+    {
+      "id": 18,
+      "name": "IVA"
+    },
+    {
+      "id": 21,
+      "name": "No aplica"
+    }
+  ],
+  "identificacionProducto": [
+    {
+      "id": 1,
+      "name": "Estandar de adopcion del contribuyente"
+    },
+    {
+      "id": 2,
+      "name": "UNSPSC"
+    },
+    {
+      "id": 3,
+      "name": "Partida arancelaria"
+    },
+    {
+      "id": 4,
+      "name": "GTIN"
+    }
+  ]
+}

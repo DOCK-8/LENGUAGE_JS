@@ -1,0 +1,140 @@
+#view-facturas{
+  /* FINISH MOCKUP VIEW FACTURAS */
+  /* display: none; */
+  justify-content: center;
+  padding: 2vmax;
+  background: #FBFFE4;
+}
+body{
+  background-image: url("img/studio-wallpapers.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+#create-facturas{
+  display : none;
+  padding-top: 10vmin;
+  margin: 0;
+}
+#table-facturas,#itemsTable{
+  box-shadow: .4em .4em 2em 0 #000;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  transition: .1s transform;
+  th{
+    color: #FBFFE4;
+    background: #3D8D7A;
+  }
+  td{
+    background: #B3D8A8;
+  }
+  th,td{ 
+    padding: .8em; 
+    border: solid 1px #3D8D7A;
+    text-align: center;
+  }
+}
+#table-facturas:hover, #itemsTable:hover{
+  transform: translateY(-2%);
+}
+.editButton, .deleteButton{
+  padding: .8em;
+}
+button{
+  font-size: 1em;
+  padding: .5em;
+  border: none;
+  border-radius: 5%;
+  text-transform: uppercase;
+}
+.valid, .editButton{
+  color: #FBFFE4;
+  background: #3D9D7A;
+}
+.valid:hover, .editButton:hover{
+  color: #3D9D7A; 
+  background: #FBFBFB;
+  outline: 2px solid #3D9D7A;
+}
+.invalid, .deleteButton{
+  color: #FBFFE4;
+  background: #F96868;
+  transition: .5s background;
+}
+.invalid:hover, .deleteButton:hover{
+  color: #F96868; 
+  background: #FBFBFB;
+  outline: 2px solid #F96868;
+}
+.acceptButton{
+  padding: .8em;
+  display: none;
+  color: #FBFFE4;
+  background: #3674B5;
+  transition: .5s background;
+}
+.acceptButton:hover{
+  color: #3674B5; 
+  background: #FBFBFB;
+  outline: 2px solid #3674B5;
+}
+
+/* FACTURAS - CONTAINER */
+#container-facturas-a, #container-facturas-b, #container-facturas-c{
+  background: #000000EF;
+  border: 1px solid #FF6500;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  gap: .5em;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  max-width: 40vw;
+  padding: .8em;
+  & > * {
+    padding: .8em;
+  }
+  & > input,select{
+    font-size: 1em;
+    background-color: #1E3E62;
+    border: 3px solid #FF6500;
+    border-radius: 3% 3% / 50% 50%;
+    color: #fff;
+  }
+  & label{
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #FF6500;
+  }
+}
+
+/* FACTURAS - CONTAINER A */
+
+/* FACTURAS - CONTAINER B */
+
+/* FACTURAS - CONTAINER C */
+
+.containerRange{
+  display: flex;
+  color: #fff;
+}
+
+#itemCreate{
+  background: #578FCA; 
+  color: #D1F8EF;
+  padding: 1em;
+  width: min-content;
+}
+#itemCreate:hover{
+  background: #3674B5;
+}
+#itemsTable {
+  margin-top: 3em;
+  font-size: .7em;
+}
+#paymentDate,#paymentDateLabel{
+  display: none;
+}
