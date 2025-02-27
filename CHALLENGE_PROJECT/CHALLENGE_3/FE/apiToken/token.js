@@ -1,13 +1,13 @@
-import {URL, EMAIL, PASSWORD, CLIENT_ID, CLIENT_SECRET} from "./config.js"
+import credential from "./config.json" with {type: "json"};
 var refreshToken, token, typeToken;
 
 async function createToken(){
   let data = new FormData();
   data.append("grant_type","password");
-  data.append("client_id",CLIENT_ID);
-  data.append("client_secret",CLIENT_SECRET);
-  data.append("username",EMAIL);
-  data.append("password",PASSWORD);
+  data.append("client_id",credential.CLIENT_ID);
+  data.append("client_secret",credential.CLIENT_SECRET);
+  data.append("username",credential.EMAIL);
+  data.append("password",credential.PASSWORD);
   let optionsCreate = {
     method : 'POST',
     headers : {
@@ -16,12 +16,13 @@ async function createToken(){
     body : data, 
     redirect : "follow"
   };
-  let datosApi = await fetch(URL+"/oauth/token",optionsCreate)
+  let datosApi = await fetch(credential.URL+"/oauth/token",optionsCreate)
   .then(respuesta => respuesta.json())
   .catch(error => console.error(`NO SE CONECTO ${error}`));
-  refreshToken = datosApi.refresh_token;
-  token = datosApi.access_token;
-  typeToken = datosApi.token_type;
+  credential.REFRESH_TOKEN = datosApi.refresh_token;
+  credential.TOKEN = datosApi.access_token;
+  credential.TOKEN_TYPE = datosApi.token_type;
 }
 
-createToken();
+await createToken();
+console.log(credential);
