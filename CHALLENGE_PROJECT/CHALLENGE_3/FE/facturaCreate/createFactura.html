@@ -6,13 +6,172 @@
     <link rel = "stylesheet" href = "../src/style/styleGeneralFactura.css">
     <link rel = "stylesheet" href = "styleCreate.css">
     <script defer src = "../includes/navegate.js"></script>
+    <script defer src = "create.js" type = "module"></script>
   </head>
   <body>
     <div id = "div-facturas">
       <div id = "navegate-panel" data-include = "../includes/navegate.html">
       </div>
-      <div id = "panel-bill-create">
-      </div>
+      <form id = "bill-create-a" class = "grid">
+        <div class="item item-0">
+          <label>CODIGO</label>
+          <input type = "text" id = "referenceCode" name = "code" readOnly>
+        </div>
+        <div class="item item-1">
+          <label>RANGO</label>
+          <select id = "numberRange" name = "numbering_range_id" readOnly>
+          </select>
+        </div>
+        <div class="item item-2 empty-cell">2</div>
+        <div class="item item-3">
+          <label>FORMA DE PAGO</label>
+          <select id = "paymentForm" name = "payment_form"></select>
+        </div>
+        <div class="item item-4">
+          <label>INICIO DE FACTURACION</label>
+          <input type = "date" name = "billing_start_date">
+          <label>HORA</label>
+          <input type = "time" name = "billing_start_time">
+          <label>FINAL DE FACTURACION</label>
+          <input type = "date" name = "billing_end_date">
+          <label>HORA</label>
+          <input type = "time" name = "billing_end_time">
+        </div>
+        <div class="item item-5">
+          <label>OBSERVACION</label>
+          <textarea name = "observation"></textarea>
+        </div>
+        <div class="item item-6">
+          <label>METODO DE PAGO</label>
+          <select id = "paymentMethodCod" name = "payment_method_code"></select>
+        </div>
+        <div class="item item-7">
+          <label id = "paymentDateLabel">FECHA DE PAGO</label>
+          <input name = "payment_due_date" type = "date">
+        </div>
+        <div class="item item-8 empty-cell">8</div>
+        <div class="item item-9 button">
+          <button class = "next-button" type = "submit">NEXT</button>
+        </div>
+        <div class="item item-10 empty-cell">10</div>
+      </form>
+      <form id = "bill-create-b" class = "grid">
+        <div class="item item-0">
+          <label>IDENTIFICACION</label>
+          <select id = "customerIdentificationId" name = "customer_identification_document">
+          </select>
+        </div>
+        <div class="item item-1">
+          <label>NUMERO</label>
+          <input id = "customerIdentificationNumber" type = "number" name = "customer_identification">
+        </div>
+        <div class="item item-2">
+          <label>COMPAÑIA</label>
+          <input id = "customerCompany" type = "text" name = "customer_company">
+        </div>
+        <div class="item item-3">
+          <label>NOMBRE COMERCIAL</label>
+          <input id = "customerTradeName" type = "text" name = "customer_trade_name">
+        </div>
+        <div class="item item-4">
+          <label>NOMBRE</label>
+          <input id = "customerName" type = "text" name = "customer_name">
+          <label>CORREO</label>
+          <input id = "customerEmail" type = "email" name = "customer_email">
+          <label>TELEFONO</label>
+          <input id = "customerPhone" type = "tel" name = "customer_phone">
+          <label>DIRECCION</label>
+          <input id = "customerAddress" type = "text" name = "customer_address">
+        </div>
+        <div class="item item-5 empty-cell">5</div>
+        <div class="item item-6">
+          <label>TIPO DE ORGANIZACION LEGAL</label>
+          <select id = "customerLegalOrganization" name = "customer_legal_organization">
+          </select>
+        </div>
+        <div class="item item-7">
+          <label>MUNICIPALIDAD</label>
+          <select id = "customerMunicipality" name = "customer_municipality">
+          </select>
+        </div>
+        <div class="item item-8 button">
+          <button class = "previus-button" type = "button">PREVIUS</button>
+        </div>
+        <div class="item item-9 button">
+          <button class = "next-button" type = "submit">NEXT</button>
+        </div>
+        <div class="item item-10">
+          <label>TRIBUTO</label>
+          <select id = "customerTribute" name = "customer_tribute">
+          </select>
+        </div>
+      </form>
+      <form id = "bill-create-c" class = "grid">
+        <div class="item item-0">
+          <label>ID</label>
+          <input id = "itemCodeReference" type = "number" name = "item_code_reference">
+        </div>
+        <div class="item item-1">
+          <label>TRIBUTO</label>
+          <select id = "itemTribute" name = "item_tribute">
+          </select>
+        </div>
+        <div class="item item-2">
+          <label>IMPUESTO - %</label>
+          <div class = "containerRange">
+            <input id = "itemTaxRate" type = "range" name = "item_tax_rate" step = "0.01">
+            <span id = "itemTaxData"></span>
+          </div>
+        </div>
+        <div class="item item-3">
+          <label>DESCUENTO - %</label>
+          <div class = "containerRange">
+           <input id = "itemDiscountRate" type = "range" name = "item_discount_rate" step = "0.01">
+           <span id = "itemDiscountData"></span>
+          </div>
+        </div>
+        <div class="item item-4">
+          <label>NAME</label>
+          <input id = "itemName" type = "text" name = "item_name">
+          <label>MEDIDA</label>
+          <select id = "itemUnitMeasure" name = "item_unit_measure">
+          </select>
+          <label>CANTIDAD</label>
+          <input id = "itemQuantity" type = "number" name = "item_quantity">
+          <label>PRECIO</label>
+          <input id = "itemPrice" type = "number" name = "item_price" step = "any"><!--precio con Impuesteo-->
+        </div>
+        <div class="item item-5">
+          <table id = "itemsTable">
+            <tr>
+              <th>CODE</th>
+              <th>NAME</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>DISCOUNT</th>
+              <th>OPTIONS</th>
+            </tr>
+          </table>
+        </div>
+        <div class="item item-6">
+          <label>EXCLUSION ITEM</label>
+          <input id = "itemIsExcluded" type = "checkbox" name = "item_exclude">
+        </div>
+        <div class="item item-7">
+          <label>STANDARD</label>
+          <select id = "itemStandardCode" name = "item_standart_code">
+          </select>
+        </div>
+        <div class="item item-8 button">
+          <button class = "previus-button" type = "button">PREVIUS</button>
+        </div>
+        <div class="item item-9 button">
+          <button id = "bill-create" class = "next-button" type = "button">CREAR FACTURA</button>
+        </div>
+        <div class="item item-10 button">
+          <button type = "submit">AGREGAR ITEM</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>

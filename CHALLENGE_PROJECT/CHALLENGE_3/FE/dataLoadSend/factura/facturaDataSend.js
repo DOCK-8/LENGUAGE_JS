@@ -10,6 +10,7 @@ function FacturaGeneralCreate(data){
   factura.billing_period.start_time = data.billing_start_time + ":00";
   factura.billing_period.end_date = data.billing_end_date;
   factura.billing_period.end_time = data.billing_end_time + ":00";
+  console.log(factura);
 }
 
 export {FacturaGeneralCreate};

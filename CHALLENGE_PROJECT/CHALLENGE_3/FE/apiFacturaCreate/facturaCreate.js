@@ -1,6 +1,8 @@
-import {credential} from "../apiToken/token.js";
+import {cargarConfigAPI, credential} from "../apiToken/token.js";
+import factura from "../dataLoadSend/factura.json" with {type : "json"};
 
-function crearFacturaFactus(factura){  
+function crearFacturaFactus(){  
+  cargarConfigAPI();
   let raw = JSON.stringify(factura);
   let requestOptions = {
     method: "POST",

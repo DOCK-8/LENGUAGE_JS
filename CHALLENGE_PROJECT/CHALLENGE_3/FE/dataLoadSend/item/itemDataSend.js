@@ -13,6 +13,7 @@ function FacturaItemCreate(data){
   item.tribute_id = data.item_tribute;
   // item.withholding_taxes = ;
   factura.items.push({...item});
+  console.log(factura);
 }
 
 export {FacturaItemCreate};

@@ -12,6 +12,7 @@ function FacturaUserCreate(data){
   factura.customer.tribute_id = data.customer_tribute;
   factura.customer.identification_document_id = data.customer_identification_document;
   factura.customer.municipality_id = data.customer_municipality;
+  console.log(factura);
 }
 
 export {FacturaUserCreate};
