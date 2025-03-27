@@ -3,8 +3,10 @@ function buttonsNavegateForm (){
     button.addEventListener("click", e => {
       let divFather = e.target.parentElement.parentElement;
       let divBrother = divFather.nextElementSibling;
-      divFather.style.display = "none";
-      divBrother.style.display = "grid";
+      if(divBrother){
+        divFather.style.display = "none";
+        divBrother.style.display = "grid";
+      }
     });
   });
   document.querySelectorAll(".previus-button").forEach(button => {

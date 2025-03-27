@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "../src/style/styleGeneralFactura.css">
+    <link rel = "stylesheet" href = "styleShow.css">
+    <script defer src = "../includes/navegate.js"></script>
+    <script defer src = "show.js" type = "module"></script>
+  </head>
+  <body>
+    <div id = "div-facturas">
+      <div id = "navegate-panel" data-include = "../includes/navegate.html">
+      </div>
+      <form id = "search-factura">
+        <input type = "number" name = "number">
+        <button type = "submit">
+          <svg>
+            <use xlink:href = "../src/icons/iconos.svg#search">
+          </svg>
+        </button>
+      </form>
+      <div id  = "div-show">
+        <div>
+            <div class = "header">
+              <img id = "logo" src="#" alt="Logo Empresa">
+              <div id="title"></div>
+            </div>
+            <div class="info general">
+              NIT:<span id = "nit"></span>Tel:<span id = "tel"></span>Email: <span id = "correo"></span>
+            </div>
+        </div>
+
+        <div class = "flex-container">
+          <div class="section">
+              <div class="title">Cliente</div>
+              <div class="info">Nombre: <span id = "cliente_name"></span></div>
+              <div class="info">ID: <span id = "cliente_id"></span></div>
+              <div class="info">Dirección: <span id = "cliente_direccion"></span></div>
+          </div>
+
+          <div class="section">
+              <div class="title">Factura</div>
+              <div class="info">Número: <span id = "factura_number"></span></div>
+              <div class="info">Fecha: <span id = "factura_fecha"></span></div>
+              <div class="total">Total a pagar: $<span id = "factura_pagar"></span></div>
+          </div>
+        </div>
+
+        <div class="qr">
+            <img id = "qr" src="#" alt="Código QR">
+            <a id = "dial_button" href= "#">DIAN</a>
+        </div>
+      </div>
+        <a id = "show-button" href = "#" download="documento.pdf">
+          <svg>
+            <use xlink:href = "../src/icons/iconos.svg#download"></use>
+          </svg>
+        </a>
+    </div>
+  </body>
+</html>

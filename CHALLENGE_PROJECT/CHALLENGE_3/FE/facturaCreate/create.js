@@ -25,7 +25,25 @@ Object.entries(formfunction).forEach(([form, funct]) => {
   });
 })
 
-document.getElementById("bill-create").addEventListener("click", e => {
+document.getElementById("bill-create").addEventListener("click", async e => {
   console.log("CREANDO FACTURA");
-  crearFacturaFactus();
+  let notification = document.querySelector("dialog");
+  notification.showModal();
+  let svgNotification = notification.querySelector("svg");
+  let letterNotification = notification.querySelector("p");
+  // ERROR
+  let answerAPI = await crearFacturaFactus();
+  console.log(answerAPI);
+  if(answerAPI.status == "Created"){
+    localStorage.setItem("factura", answerAPI.data.bill.number);
+    svgNotification.style.stroke = "#16FF00";
+    svgNotification.querySelector("use").setAttribute("href", "../src/icons/iconos.svg#accept");
+    letterNotification.textContent = "EXITOSO";
+    window.location.href = 'http://localhost:8080/facturaShow/showFactura.html';
+  }
+  else{
+    svgNotification.style.stroke = "#FF1700";
+    svgNotification.querySelector("use").setAttribute("href", "../src/icons/iconos.svg#error");
+    letterNotification.innerHTML = `FALLIDO<br><strong>${answerAPI.message}</strong><br>${JSON.stringify(answerAPI.data.errors,null,2)}`;
+  }
 });

@@ -55,7 +55,7 @@ async function cargarFacturasFactus(){
     celda3.textContent = factura.number;
     celda4.textContent = factura.api_client_name;
     let button = document.createElement("BUTTON");
-    if(factura.status == 1){
+    if(factura.status != 1){
       let opcion = "invalid";
       button.classList.add(opcion);
       button.textContent = opcion;

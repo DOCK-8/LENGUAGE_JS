@@ -14,9 +14,9 @@ function crearFacturaFactus(){
     redirect: "follow"
   };
 
-  fetch(credential.URL+"/v1/bills/validate", requestOptions)
-  .then((response) => response.text())
-  .then((result) => console.log(result))
+  return fetch(credential.URL+"/v1/bills/validate", requestOptions)
+  .then((response) => response.json())
+  .then((result) => result)
   .catch((error) => console.error(error));
 }
 
